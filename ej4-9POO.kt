@@ -1,3 +1,6 @@
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
 data class Tarea(val id: Int, val descripcion: String, var estado: Boolean = false, var fechaRealizada: String? = null) {
     fun completar() {
         estado = true
